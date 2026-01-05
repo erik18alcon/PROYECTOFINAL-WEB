@@ -1,0 +1,510 @@
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+mark,
+pre,
+code {
+    font: inherit;
+}
+
+mark {
+    background-color: transparent;
+}
+
+picture,
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
+    display: block;
+    font: inherit;
+    background-color: initial;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+
+
+
+
+.Body {
+    width: 100%;
+    background-color: #e3e7ea;
+}
+
+/* HEADER*/
+
+.Header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.Header-Nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2.5rem;
+
+
+    text-transform: uppercase;
+    font-family: "Arimo", sans-serif;
+    font-size: .9375rem;
+}
+
+.Button-Nav {
+    width: 1.25rem;
+    position: relative;
+    transition: 0.3s ease;
+}
+.Button-Nav:hover{
+    background-color: #21ff28;
+    padding: .1875rem;
+    border-radius: 100%;
+}
+
+.Nav-Content {
+    display: none;
+    gap: 1.875rem;
+
+    transition: 0.3s ease;
+
+}
+
+
+.Nav-Content.isOpen {
+    width: 25rem;
+    max-width: 43.75rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    margin: 2.5rem 1.25rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.Content-Colections:Hover {
+    color: #21ff28;
+}
+
+.Content-Embasser:Hover {
+    color: #21ff28;
+}
+
+.Header-Search {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.25rem;
+}
+
+.Header-Logo {
+    width: 100%;
+    margin: 0 0 0 1.875rem;
+    font-family: "BBH Bartle", sans-serif;
+    font-size: 3.125rem;
+    transition: 0.3s ease;
+}
+
+.Header-Logo:hover {
+    color: #21ff28;
+
+}
+
+.Search-Glass {
+    width: 1.25rem;
+}
+
+.Glass-Icon {
+    transition: 0.3s ease;
+}
+
+.Glass-Icon:hover {
+    background-color: #21ff28;
+    padding: .1875rem;
+    border-radius: 100%;
+}
+
+.Search-Session {
+    width: 1.25rem;
+}
+
+.Session-Icon {
+    transition: 0.3s ease;
+}
+
+.Session-Icon:hover {
+    background-color: #21ff28;
+    padding: .1875rem;
+    border-radius: 100%;
+}
+
+.Search-Buy {
+    width: 1.25rem;
+}
+
+.Buy-Icon {
+    transition: o.3s ease;
+}
+
+.Buy-Icon:hover {
+    background-color: #21ff28;
+    padding: .1875rem;
+    border-radius: 100%;
+}
+
+/* MAIN*/
+
+.Hero-Upper {
+    position: sticky;
+    width: 100%;
+}
+
+.Upper-Video {
+    object-fit: cover;
+}
+
+
+.Main-Products {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Product-Title {
+    width: 100%;
+    color: rgb(5, 5, 172);
+    margin: 1.875rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 9.375rem;
+    text-transform: uppercase;
+}
+
+.Product-Title:hover {
+    color: #21ff28;
+    transition: 0.3s ease;
+}
+
+.Porduct.Wrapper{
+    width: 100%;
+}
+.Product-Content {
+    width: 450%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    animation: product-move 30s linear infinite;
+}
+
+.Product-Items {
+    width: 100%;
+    max-width: 62.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 2.5rem;
+}
+
+.Item-principal {
+    min-height: 3.75rem;
+}
+
+
+
+/*newsletter*/
+
+
+.Main-News {
+    width: 100%;
+    height: 26.25rem;
+    overflow: hidden;
+    background-color: #21ff28;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Subscribe-Form {
+    width: 90%;
+    max-height: 21.875rem;
+    max-width: 62.5rem;
+    margin: 2.5rem;
+    padding: 1.875rem;
+
+    font-family: "Arimo", sans-serif;
+    transition: 0.3s ease;
+}
+
+
+
+.Form-Title {
+
+    font-size: 1.875rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.Newsletter-Label {
+    margin: .625rem;
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+
+}
+
+.Newsletter-Input {
+    font-family: "Arimo", sans-serif;
+    color: white;
+    margin-bottom: .625rem;
+    border-bottom: .0625rem solid white;
+}
+
+.Newsletter-Button {
+    margin: auto;
+    color: #21ff28;
+    padding: 1.1875rem;
+    font-weight: 600;
+    border: .1875rem solid #21ff28;
+    border-radius: 1.25rem;
+
+    transition: 0.3s ease;
+}
+
+.Newsletter-Button:hover {
+    color: white;
+    background-color: black;
+    border: .1875rem solid #21ff28;
+}
+
+
+.Main-Blanks {
+    width: 100%;
+    height: 56.25rem;
+    margin: 0 0 1.25rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "BBH Bartle", sans-serif;
+    font-size: 5.625rem;
+
+    animation: words-move 10s ease infinite;
+}
+
+/*FOOTER*/
+
+.Footer {
+
+    width: 90%;
+    margin: 12.5rem 3.125rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    font-family: "Arimo", sans-serif;
+    font-size: .9375rem;
+    text-transform: uppercase;
+}
+
+.Section-Title {
+    margin: 1.25rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.Company-Part {
+     margin: .625rem 0 0 0;
+    transition: all 0.2s ease;
+}
+
+.Company-Part:hover {
+    color: #21ff28;
+    font-weight: 700;
+    transform: translateX(1.25rem);
+}
+
+.Follow-social {
+ margin: .625rem 0 0 0;
+    transition: all 0.2s ease;
+}
+
+.Follow-social:hover {
+    color: #21ff28;
+    font-weight: 700;
+    transform: translateX(1.25rem);
+}
+
+.Policies-Policy {
+     margin: .625rem 0 0 0;
+    transition: all 0.2s ease;
+}
+
+.Policies-Policy:hover {
+    color: #21ff28;
+    font-weight: 700;
+    transform: translateX(1.25rem);
+}
+
+
+
+
+
+
+
+@keyframes product-move {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes words-move {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/*MEDIA*/
+
+@media(max-width:49.6875rem){
+    .Header-Nav{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .Header-Logo{
+        width: 100%;
+        font-size: 2.5rem;
+        margin: auto;
+    }
+    .Footer{
+        display: flex;
+        flex-flow: column;
+        gap: 1.25rem;
+    }
+        
+    }
+   @media(max-width:75rem){
+    .Product-Title{
+        width: 70%;
+        margin: 1.25rem 0;
+        font-size: 4.375rem;
+    }
+    .Main-Blanks{
+        display: none;
+    }
+.Main-News{
+    display: flex;
+    flex-flow: column;
+}
+.Subscribe-Form{
+    margin: auto;
+}
+
+   }
+   @media(max-width:34.375rem){
+    .Product-Title{
+         width: 70%;
+        margin: 1.25rem 0;
+        font-size: 2.1875rem;
+    }
+   }
+
+
+
