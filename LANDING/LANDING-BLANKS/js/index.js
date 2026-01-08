@@ -11,13 +11,23 @@ ButtonNav.addEventListener( `click` , ()=>{
     NavContent.classList.toggle( `isOpen`)
 })
 
+//HEADER--CESTA DE COMPRA
 
+const buyIcon = document.querySelector(`.Buy-Icon`)
+const headerCart = document.querySelector(`.Header-Cart`)
 
+buyIcon.addEventListener(`click` , ()=>{
+    headerCart.classList.toggle(`isHere`)
+})
 
+//BOTON DE SUSCRIPCION A LA NEWSLETTER
 
-//PRODUCTOS EN MOVIMIENTO
+const registerDone = document.querySelector(`.Register-Done`)
+const newsletterButton = document.querySelector( `.Newsletter-Button`)
+console.log(registerDone)
+console.log(newsletterButton)
 
-const ItemPrincipal = document.querySelectorAll( `.Item-principal`)
-const ItemHidden = document.querySelectorAll( `.Item-Hidden`)
-const HiddenClose = document.querySelectorAll( `.Hidden-Close`)
+newsletterButton.addEventListener( `click` , ()=>{
+    registerDone.classList.add( `isDone`)
+})
 

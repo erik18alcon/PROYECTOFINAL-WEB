@@ -12,6 +12,26 @@ ButtonNav.addEventListener(`click`, () => {
     NavContent.classList.toggle(`isOpen`)
 })
 
+//CESTA DE COMPRA
+
+const buyIcon = document.querySelector(`.Buy-Icon`)
+const headerCart = document.querySelector(`.Header-Cart`)
+const cartText = document.querySelector(`.Cart-Text`)
+const cartProduct = document.querySelector( `.Cart-Product`)
+const cartTotal = document.querySelector(`.Cart-Total`)
+const addSelector = document.querySelector(`.Add-Selector`)
+
+
+buyIcon.addEventListener(`click` , ()=>{
+    headerCart.classList.toggle(`isHere`)
+})
+
+addSelector.addEventListener( `click` , ()=>{
+    cartText.classList.toggle( `isNone`)
+    cartProduct.classList.toggle(`isWorking`)
+    cartTotal.classList.toggle( `isOn`)
+})
+
 
 
 //GUIA DE TALLAS OCULTA

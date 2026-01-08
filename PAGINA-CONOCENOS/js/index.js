@@ -10,3 +10,12 @@ console.log( NavContent )
 ButtonNav.addEventListener( `click` , ()=>{
     NavContent.classList.toggle( `isOpen`)
 })
+
+//HEADER--CESTA DE COMPRA
+
+const buyIcon = document.querySelector(`.Buy-Icon`)
+const headerCart = document.querySelector(`.Header-Cart`)
+
+buyIcon.addEventListener(`click` , ()=>{
+    headerCart.classList.toggle(`isHere`)
+})
