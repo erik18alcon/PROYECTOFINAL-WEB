@@ -1,0 +1,138 @@
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+mark,
+pre,
+code {
+    font: inherit;
+}
+
+mark {
+    background-color: transparent;
+}
+
+picture,
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
+    display: block;
+    font: inherit;
+    background-color: initial;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.Body {
+    width: 100%;
+    background-color: #e3e7ea;
+}
+
+/*MAIN*/
+
+.Main-Content{
+
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 12.5rem 3.125rem; 
+}
+
+.Content-Title{
+
+    width: 50%;
+    margin-bottom: 1.875rem;
+
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 500;
+}
+
+.Content-Text{
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.25rem;
+
+    font-family: "Arimo", sans-serif;
+    font-weight: 500;
+
+}
+
+
+/*MEDIA*/
+
+@media(max-width:49.6875rem){
+
+    .Content-Colections{
+        background-color: #e3e7ea;
+    }
+    .Content-Embasser{
+        background-color: #e3e7ea;
+    }
+   
+    }

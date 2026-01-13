@@ -1,0 +1,290 @@
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+mark,
+pre,
+code {
+    font: inherit;
+}
+
+mark {
+    background-color: transparent;
+}
+
+picture,
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
+    display: block;
+    font: inherit;
+    background-color: initial;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+/*MAIN*/
+
+.Main-Content {
+
+    width: 90%;
+    position: relative;
+}
+
+.Content-Video {
+
+    width: 99vw;
+    height: 100vh;
+
+}
+
+.Main-Video {
+    width: 100%;
+    height: 100vh;
+    opacity: 80%;
+    object-fit: cover;
+    margin: auto;
+
+}
+
+.Main-Login {
+
+    width: 100%;
+    margin: auto 3.125rem auto 2.8125rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.Login-Title {
+
+    font-family: "Arimo", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    text-align: center;
+
+}
+
+.Login-Form {
+    width: 50%;
+    padding: 1.875rem 1.25rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .9375rem;
+    background-color: #21ff28;
+
+    font-family: "Arimo", sans-serif;
+}
+
+.Login-Form.isOut {
+    display: none;
+}
+
+.Login-User {
+    margin-bottom: .3125rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.Login-Pass {
+    margin-bottom: .3125rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.Login-Button {
+    width: 30%;
+    margin: auto;
+    font-family: "Arimo", sans-serif;
+    font-weight: 500;
+    padding: .3125rem;
+
+    transition: 0.3s ease-in-out;
+}
+
+.Login-Button:hover {
+    color: white;
+    background-color: black;
+}
+
+.Register-Form {
+    width: 50%;
+    padding: 1.875rem 1.25rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.25rem;
+    background-color: #21ff28;
+
+    font-family: "Arimo", sans-serif;
+}
+
+.Register-User {
+    margin-bottom: .3125rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.Register-Input {
+    margin-bottom: .625rem;
+}
+
+.Register-Pass {
+    margin-bottom: .3125rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.Register-Button {
+    width: 30%;
+    margin: auto;
+    font-family: "Arimo", sans-serif;
+    font-weight: 500;
+    padding: .3125rem;
+
+    transition: 0.3s ease-in-out;
+}
+
+.Register-Button:hover {
+    color: white;
+    background-color: black;
+}
+
+.Register-Text {
+    margin: auto;
+    font-family: "Arimo", sans-serif;
+    font-weight: 500;
+    color: gray;
+
+}
+
+
+
+.Register-Form {
+    height: .0625rem;
+    opacity: 0;
+    transform: translateY(-1.25rem);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.Register-Form.isActive {
+    height: auto;
+    opacity: 100;
+    transform: translateY(0);
+
+}
+
+.Register-Done {
+    height: .0625rem;
+    opacity: 0;
+    transform: translateY(-1.25rem);
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.Register-Done.isDone {
+    height: auto;
+    opacity: 100;
+    transform: translateY(0);
+
+    font-family: "Arimo", sans-serif;
+    margin: 0 auto;
+    color: white;
+    background-color: red;
+    padding: .3125rem;
+}
+
+
+/*MEDIA*/
+
+@media(max-width:49.6875rem) {
+
+    .Main-Login {
+        width: 100%;
+        margin: 15.625rem auto 0 1.1875rem;
+
+    }
+
+    .Login-Form {
+        width: 85%;
+
+    }
+
+    .Login-Title {
+        font-size: 1.875rem;
+    }
+
+    .Register-Form {
+        width: 85%;
+    }
+
+    .Register-Button {
+        font-size: .625rem;
+    }
+}

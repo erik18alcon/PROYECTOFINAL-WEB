@@ -1,0 +1,233 @@
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+mark,
+pre,
+code {
+    font: inherit;
+}
+
+mark {
+    background-color: transparent;
+}
+
+picture,
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
+    display: block;
+    font: inherit;
+    background-color: initial;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+
+
+
+/*MAIN*/
+
+.Main {
+    width: 100vw;
+    margin-top: 12.5rem;
+    font-family: "Arimo", sans-serif;
+}
+
+.Main-Resume {
+    width: 90%;
+    margin: 0 auto 2.5rem;
+}
+
+.Resume-Title {
+    border: solid .0625rem black;
+    padding: .3125rem;
+    margin-bottom: 1.25rem;
+    font-size: 90%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#Resume-Products {
+    padding: .3125rem;
+    margin-top: .625rem;
+    font-weight: 500;
+    font-size: 100%;
+    line-height: 3.75rem;
+}
+
+.total {
+    padding: .3125rem;
+    margin-top: .625rem;
+    font-weight: 500;
+    font-size: 90%;
+}
+
+.Pay-Form {
+    width: 90%;
+    margin: auto;
+    font-family: "Arimo", sans-serif;
+}
+
+.Form-Title {
+    border: solid .0625rem black;
+    padding: .3125rem;
+    font-size: 90%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Form-Data {
+    width: 100%;
+    padding: .3125rem;
+    margin-top: .625rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .625rem;
+
+}
+
+.User-Data {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    gap: 3.125rem;
+}
+
+.User-Data--Name {
+    display: flex;
+    flex-flow: column;
+    gap: .625rem;
+}
+
+.Data-Title {
+    margin: .625rem 0;
+    font-size: 110%;
+    font-weight: 600;
+}
+
+.User-Data--Place {
+    display: flex;
+    flex-flow: column;
+    gap: .625rem;
+}
+
+.Pay-Data {
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    gap: 3.75rem;
+}
+
+.Pay-Data--Form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .3125rem;
+
+}
+
+.Pay-Data--Card {
+    display: flex;
+    flex-flow: column;
+    gap: .625rem;
+}
+
+.Card-Data {
+    margin-top: 3.125rem;
+    display: flex;
+    flex-flow: column;
+    gap: .625rem;
+}
+
+.Pay-Button {
+    width: 90%;
+    margin: auto;
+    padding: .625rem;
+    border: solid .0625rem black;
+    font-size: 100%;
+    font-weight: 600;
+
+    transition: .3s ease-in-out;
+}
+.Pay-Button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*MEDIA*/
+
+@media(max-width: 56.25rem){
+    .Form-Data{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1.25rem;
+    }
+}
+@media(max-width: 31.25rem){
+    .Pay-Data--Form{
+        display: flex;
+        flex-flow: column nowrap;
+        gap: .3125rem;
+    }
+}

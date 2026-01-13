@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTO</title>
+    <link rel="stylesheet" href="/CSS/producto.css">
+    <link rel="stylesheet" href="/CSS/header-footer.css">
+    <script src="/JS/producto.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BBH+Bartle&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BBH+Bartle&family=BBH+Bogle&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="Body">
+
+
+    <!--HEADER-->
+
+    <header class="Header">
+
+        <nav class="Header-Nav">
+            <button class="Button-Nav">
+                <img src="/assets/icons/list.svg" alt="list">
+
+                <ul class="Nav-Content">
+                    <li class="Content-Colections">
+                        <a href="/grid.html" class="Colections-principal">clear
+                            perspective</a>
+                    </li>
+                    <li class="Content-Embasser">
+                        <a href="/embajador.html" class="Embasser-Page">embajadores</a>
+                    </li>
+                </ul>
+            </button>
+
+            <a href="/landing.html" class="Header-Logo">BLANKS</a>
+
+            <ul class="Header-Search">
+                <input type="search" placeholder="Buscar" class="Search-Input">
+                <li class="Search-Session">
+                    <a href="/cuenta.html" class="Session-Button">
+                        <img src="/assets/icons/user-1-svgrepo-com.svg" class="Session-Icon" alt="session">
+                    </a>
+                </li>
+                <li class="Search-Buy">
+                    <div class="Buy-Button">
+                        <img src="/assets/icons/cart-4-svgrepo-com.svg" class="Buy-Icon" alt="cart">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="Header-Cart">
+            <span class="Cart-Title">cesta</span>
+            <p class="Cart-Text">Aún no has añadido productos a tu cesta</p>
+            <div class="Cart-Product">
+                <img src="/assets/coleccion-principal/producto6-frente.jpg" alt="producto2-frente"
+                    class="Cart-Product--Img">
+                <p class="Cart-Product--Text">Cazadora acolchada</p>
+            </div>
+            <div class="Cart-Total">Total: 99,99 EUR</div>
+            <a href="/pago.html" class="Cart-Link">
+                <button class="Cart-Button">Tramitar</button>
+            </a>
+        </div>
+    </header>
+
+
+    <!--MAIN-->
+    <main>
+
+        <div class="Main-Wrapper">
+
+            <div class="Main-Product">
+                <ul class="Product-Imgs">
+                    <li class="Product-Img">
+                        <img src="/assets/coleccion-principal/modelo6-frente.jpg" alt="modelo producto6" class="Imagen">
+                    </li>
+                    <li class="Product-Img">
+                        <img src="/assets/coleccion-principal/modelo6-lateral.jpg" alt="modelo producto6"
+                            class="Imagen">
+                    </li>
+                    <li class="Product-Img">
+                        <img src="/assets/coleccion-principal/modelo6-espalda.jpg" alt="modelo producto6"
+                            class="Imagen">
+                    </li>
+                    <li class="Product-Img">
+                        <img src="/assets/coleccion-principal/producto6-frente.jpg" alt="modelo producto6"
+                            class="Imagen">
+                    </li>
+                </ul>
+            </div>
+
+            <section class="Main-Info">
+
+                <article class="Info-Title">
+                    <h1 class="Title-Product">cazadora acolchada repellent</h1>
+                    <p class="Product-Price">99,99 EUR</p>
+                </article>
+
+                <div class="Info-Product">
+                    <span class="Product-Color">amarillo</span>
+                    <p class="Product-Comp">composición: 80% poliamida</p>
+                    <p class="Product-Comp">20% poliéster</p>
+                </div>
+
+                <article class="Info-Descrip">
+                    <p class="Product-Descrip">Cazadora acolchada relaxed fit confeccionada en tejido técnico que repele
+                        el agua al contacto.
+                        Cuello subido y manga larga acabada en puño interior elástico. Bolsillos de vivo en cadera y
+                        detalle de bolsillo interior. Bajo ajustable.
+                    </p>
+
+                    <button class="Size-Guide">Guía de tallas</button>
+                    <div class="Guide-Hidden">
+                        <button class="Guide-Close">cerrar</button>
+                        <img src="/assets/guia-de-tallas.webp" alt="guide" class="Guide-Img">
+                    </div>
+                </article>
+
+                <div class="Size-Selector">
+                    <select name="Size" id="Size" class="Size-Button">
+                        <option value="">Selecciona tu talla</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+
+                    <button onclick="añadir(`Cazadora Repellent`, 99.99)" class="Add-Selector">Añadir</button>
+                </div>
+
+
+            </section>
+        </div>
+
+        <div class="Main-Reco">
+            <div class="Reco-Title">Productos que podrían interesarte</div>
+            <ul class="Reco-Products">
+                <li class="Reco-Imgs">
+                    <a href="producto10.html" class="Reco-Links">
+                        <img src="/assets/coleccion-principal/producto10-frente.jpg" alt="other-products"
+                            class="Reco-Img">
+                    </a>
+                </li>
+                <li class="Reco-Imgs">
+                    <a href="producto8.html" class="Reco-Links">
+                        <img src="/assets/coleccion-principal/producto8-frente.jpg" alt="other-products"
+                            class="Reco-Img">
+                    </a>
+                </li>
+                <li class="Reco-Imgs">
+                    <a href="producto7.html" class="Reco-Links">
+                        <img src="/assets/coleccion-principal/producto7-frente.jpg" alt="other-products"
+                            class="Reco-Img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </main>
+
+    <!--FOOTER-->
+
+    <footer class="Footer">
+
+        <div class="Footer-Section Company">
+            <span class="Section-Title">Company</span>
+            <a href="/conocenos.html" class="Company-Part">Sobre nosotros</a>
+            <a href="/embajador.html" class="Company-Part">Se embajador</a>
+
+
+        </div>
+        <div class="Footer-Section Follow">
+            <span class="Section-Title">¡Síguenos!</span>
+            <a href="https://www.instagram.com/" class="Follow-social">instagram</a>
+            <a href="https://www.tiktok.com/es-419/" class="Follow-social">tiktok</a>
+            <a href="https://x.com/?lang=es" class="Follow-social">x</a>
+            <a href="https://es.pinterest.com/" class="Follow-social">pinterest</a>
+            <a href="https://www.youtube.com/?app=desktop&gl=ES&hl=es" class="Follow-social">youtube</a>
+        </div>
+        <div class="Footer-Section Policies">
+            <span class="Section-Title">Policies</span>
+            <p class="Policies-Policy">Privacy policies</p>
+            <p class="Policies-Policy">cookies settings</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

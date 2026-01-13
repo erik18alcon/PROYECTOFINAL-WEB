@@ -1,0 +1,214 @@
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+mark,
+pre,
+code {
+    font: inherit;
+}
+
+mark {
+    background-color: transparent;
+}
+
+picture,
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
+    display: block;
+    font: inherit;
+    background-color: initial;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+
+/*MAIN*/
+
+.Main {
+    margin-top: 12.5rem;
+}
+
+.Main-Grid {
+
+    width: 90%;
+    min-height: 12.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .3125rem;
+    margin: 6.25rem auto;
+
+    font-family: "BBH Bartle", sans-serif;
+
+}
+
+.Grid-Second {
+
+    width: 90%;
+    min-height: 12.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .3125rem;
+    margin: 6.25rem auto;
+
+    font-family: "BBH Bartle", sans-serif;
+
+}
+
+.Grid-img {
+    object-fit: cover;
+    margin: auto;
+}
+
+.Img-Embasser {
+    transition: 0.3s ease-in-out;
+}
+
+.Img-Embasser:hover {
+    opacity: 75%;
+}
+
+.Grid-Video {
+
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .625rem;
+    margin: 6.25rem auto;
+
+    font-family: "BBH Bartle", sans-serif;
+}
+
+.Video-Embasser {
+    transition: 0.3s ease-in-out;
+}
+
+.Video-Embasser:hover {
+    opacity: 75%;
+}
+
+
+.Main-Become {
+
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+    margin: 3.125rem auto;
+    padding: 1.25rem;
+
+
+
+    font-family: "Arimo", sans-serif;
+    font-size: 1.25rem;
+}
+
+.Become-Title {
+
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.Become-Contact {
+
+    font-weight: 700;
+}
+
+
+
+/*MEDIA*/
+
+@media(max-width:49.6875rem) {
+   
+    .Content-Colections {
+        background-color: #e3e7ea;
+    }
+
+    .Content-Embasser {
+        background-color: #e3e7ea;
+    }
+
+
+    .Main-Grid {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: .625rem;
+    }
+
+    .Grid-Second {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: .625rem;
+    }
+
+    .Grid-Video {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: .625rem;
+    }
+    .Become-Text{
+        text-align: center;
+    }
+}

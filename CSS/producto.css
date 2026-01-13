@@ -1,0 +1,438 @@
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+mark,
+pre,
+code {
+    font: inherit;
+}
+
+mark {
+    background-color: transparent;
+}
+
+picture,
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
+    display: block;
+    font: inherit;
+    background-color: initial;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+/*HEADER-CART*/
+
+.Header-Cart {
+    width: 30%;
+    background-color: #e3e7ea;
+    border: solid .0625rem black;
+    margin-left: 75rem;
+    padding: .9375rem;
+    position: fixed;
+    z-index: 3;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 1.25rem;
+    font-family: "Arimo", sans-serif;
+
+    transition: transform .3s ease-in-out;
+    transform: translateX(31.25rem);
+
+}
+
+.Header-Cart.isHere {
+    transform: translateX(0);
+}
+
+.Cart-Title {
+
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Cart-Text {
+    font-weight: 500;
+}
+
+.Cart-Text.isNone {
+    display: none;
+}
+
+.Cart-Button {
+    padding: .5rem;
+    background-color: black;
+    color: white;
+
+    transition: .3s ease-in-out;
+}
+
+.Cart-Button:hover {
+    background-color: #21ff28;
+    color: black;
+}
+
+.Cart-Product {
+    display: none;
+}
+
+.Cart-Product.isWorking {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: .3125rem;
+}
+
+.Cart-Product--Img {
+    width: 20%;
+}
+
+.Cart-Total {
+    display: none;
+}
+
+.Cart-Total.isOn {
+    display: block;
+    font-weight: 500;
+}
+
+
+/*MAIN*/
+
+.Main-Wrapper {
+
+    width: 100%;
+    margin: 12.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.875rem;
+
+    font-family: "Arimo", sans-serif;
+}
+
+.Main-Product {
+
+    width: 80%;
+    max-height: 50rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Product-Imgs {
+
+    width: 90%;
+    transition: transform 0.4s ease-in-out;
+
+}
+
+.Product-Img {
+    object-fit: cover;
+}
+
+
+.Main-Info {
+
+    width: 80%;
+    margin: 0 auto 0 0;
+}
+
+.Info-Title {
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .625rem;
+
+    margin-bottom: 3.125rem;
+    padding-bottom: 1.25rem;
+    border-bottom: solid .0625rem black;
+
+}
+
+.Title-Product {
+
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.Product-Price {
+    font-size: 1.5625rem;
+    text-transform: uppercase;
+}
+
+.Info-Product {
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    font-size: .9375rem;
+    text-transform: uppercase;
+}
+
+.Product-Color {
+    margin-bottom: .3125rem;
+}
+
+.Info-Descrip {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: .625rem;
+    margin-top: 1.25rem;
+
+    font-size: 1.0625rem;
+    line-height: 1.5;
+
+    position: relative;
+}
+
+.Size-Guide {
+
+    border: solid .0625rem black;
+    padding: .3125rem;
+    margin: 1.25rem 0;
+
+    font-size: .9375rem;
+    transition: 0.3s ease-in-out;
+}
+
+.Size-Guide:hover {
+
+    color: white;
+    background-color: black;
+}
+
+.Guide-Hidden {
+    display: none;
+}
+
+.Guide-Hidden.isActive {
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .625rem;
+    position: absolute;
+
+    animation: appear 0.3s ease-in-out;
+
+}
+
+.Guide-Close {
+    width: 30%;
+    margin: auto;
+    padding: .125rem;
+    background-color: white;
+
+    transition: 0.3s ease-in-out;
+}
+
+.Guide-Close:hover {
+    color: white;
+    background-color: black;
+}
+
+.Guide-Img {
+    border: solid .125rem black;
+}
+
+.Size-Selector {
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .3125rem;
+    margin: 1.875rem auto;
+
+
+    font-size: 1.0625rem;
+}
+
+.Size-Button {
+
+    width: 100%;
+    border: solid .0625rem black;
+    padding: .1875rem;
+
+    transition: 0.3s ease-in-out;
+}
+
+.Size-Button:hover {
+
+    color: white;
+    background-color: black;
+}
+
+
+.Size-Drop {
+    display: none;
+}
+
+.Size-Drop .isVisible {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Add-Selector {
+
+    width: 100%;
+    border: solid .0625rem black;
+    padding: .1875rem;
+    margin: .625rem;
+
+    transition: .3s ease-in-out;
+}
+
+.Add-Selector:hover {
+
+    color: white;
+    background-color: black;
+}
+
+.Main-Reco {
+    width: 90%;
+    margin: 4.375rem auto;
+}
+
+.Reco-Title {
+    font-family: "Arimo", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.Reco-Products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .3125rem;
+}
+
+.Reco-Img {
+    margin-top: 1.25rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Reco-Img:hover {
+    transform: translateY(-1.25rem);
+
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/*MEDIA*/
+
+@media(max-width:62.5rem) {
+    
+.Product-Imgs{
+    height: 187.5rem;
+}
+    .Product-Img{
+        height: 125rem;
+    }
+    .Main-Wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .Main-Info {
+        margin: auto;
+    }
+}
+
+@media(max-width:46.25rem) {
+    .Main-Product {
+        width: 100%;
+        height: 96rem;
+    }
+
+    .Product-Imgs {
+        margin: auto;
+    }
+}
+@media(max-width:500px) {
+    .Product-Img{
+        height: 56.25rem;
+    
+    }}

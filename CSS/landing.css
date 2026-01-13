@@ -1,0 +1,514 @@
+:root {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+mark,
+pre,
+code {
+    font: inherit;
+}
+
+mark {
+    background-color: transparent;
+}
+
+picture,
+img,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form,
+input,
+select,
+option,
+textarea,
+label,
+fieldset,
+legend,
+button {
+    display: block;
+    font: inherit;
+    background-color: initial;
+}
+
+fieldset {
+    border: none;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+
+/*WINDOW-ANIMATION*/
+
+.Window-Back {
+    width: 100%;
+    background-color: #e3e7ea;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+    animation: dissapear 0.3s ease-in-out forwards;
+    animation-delay: 2s;
+
+}
+
+.Window-Logo {
+
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15.625rem auto auto auto;
+    color: black;
+
+    font-family: "BBH Bartle", sans-serif;
+    font-size: 6.25rem;
+
+}
+
+.Logo-Word--B {
+    opacity: 0;
+    animation: move-top-B 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.Logo-Word--L {
+    opacity: 0;
+    animation: move-bottom-L 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.Logo-Word--A {
+    opacity: 0;
+    animation: move-top-A 1s ease forwards;
+    animation-delay: 0.1s;
+}
+
+.Logo-Word--N {
+    opacity: 0;
+    animation: move-bottom-N 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.Logo-Word--K {
+    opacity: 0;
+    animation: move-top-K 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.Logo-Word--S {
+    opacity: 0;
+    animation: move-bottom-S 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* MAIN*/
+
+.Hero-Upper {
+    position: sticky;
+    width: 100%;
+}
+
+.Upper-Video {
+    object-fit: cover;
+}
+
+
+.Main-Products {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Product-Title {
+    width: 100%;
+    color: black;
+    margin: 1.875rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 9.375rem;
+    text-transform: uppercase;
+}
+
+.Product-Title:hover {
+    color: #21ff28;
+    transition: 0.3s ease;
+}
+
+.Porduct.Wrapper {
+    width: 100%;
+}
+
+.Product-Content {
+    width: 450%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    animation: product-move 30s linear infinite;
+}
+
+.Product-Items {
+    width: 100%;
+    max-width: 62.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 2.5rem;
+}
+
+.Item-principal {
+    min-height: 3.75rem;
+}
+
+/*newsletter*/
+
+
+.Main-News {
+    width: 100%;
+    height: 26.25rem;
+    overflow: hidden;
+    background-color: #21ff28;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Subscribe-Form {
+    width: 90%;
+    max-height: 21.875rem;
+    max-width: 62.5rem;
+    margin: 2.5rem;
+    padding: 1.875rem;
+
+    font-family: "Arimo", sans-serif;
+    transition: 0.3s ease;
+}
+
+
+
+.Form-Title {
+
+    font-size: 1.875rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.Newsletter-Label {
+    margin: .625rem;
+    font-family: "Arimo", sans-serif;
+    font-weight: 600;
+
+}
+
+.Newsletter-Input {
+    font-family: "Arimo", sans-serif;
+    color: white;
+    margin-bottom: .625rem;
+    border-bottom: .0625rem solid white;
+}
+
+.Newsletter-Button {
+    margin: auto;
+    color: #21ff28;
+    padding: 1.1875rem;
+    font-weight: 600;
+    border: .1875rem solid #21ff28;
+    border-radius: 1.25rem;
+
+    transition: 0.3s ease;
+}
+
+.Newsletter-Button:hover {
+    color: white;
+    background-color: black;
+    border: .1875rem solid #21ff28;
+}
+
+.Register-Done {
+    height: .0625rem;
+    opacity: 0;
+    transform: translateY(-1.25rem);
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.Register-Done.isDone {
+    height: auto;
+    opacity: 100;
+    transform: translateY(0);
+
+    font-family: "Arimo", sans-serif;
+    margin: 0 auto;
+    color: white;
+    background-color: red;
+    padding: .3125rem;
+}
+
+
+.Main-Blanks {
+    width: 100%;
+    height: 56.25rem;
+    margin: 0 0 1.25rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "BBH Bartle", sans-serif;
+    font-size: 5.625rem;
+
+    animation: words-move 10s linear infinite;
+}
+
+
+
+@keyframes move-top-B {
+    0% {
+        color: black;
+        opacity: 0;
+        transform: translateY(-25rem);
+
+    }
+
+    100% {
+        color: #21ff28;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes move-top-A {
+    0% {
+        color: black;
+        opacity: 0;
+        transform: translateY(-25rem);
+
+    }
+
+    100% {
+        color: #21ff28;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes move-top-K {
+    0% {
+        color: black;
+        opacity: 0;
+        transform: translateY(-25rem);
+
+    }
+
+    100% {
+        color: #21ff28;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes move-bottom-L {
+    0% {
+        color: black;
+        opacity: 0;
+        transform: translateY(25rem);
+    }
+
+    100% {
+        color: #21ff28;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes move-bottom-N {
+    0% {
+        color: black;
+        opacity: 0;
+        transform: translateY(25rem);
+    }
+
+    100% {
+        color: #21ff28;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes move-bottom-S {
+    0% {
+        color: black;
+        opacity: 0;
+        transform: translateY(25rem);
+    }
+
+    100% {
+        color: #21ff28;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dissapear {
+    ´ 0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+
+}
+
+@keyframes product-move {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes words-move {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/*MEDIA*/
+
+@media(max-width:49.6875rem) {
+    .Window-Logo {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media(max-width:75rem) {
+    .Product-Title {
+        width: 70%;
+        margin: 1.25rem 0;
+        font-size: 4.375rem;
+    }
+
+    .Main-Blanks {
+        display: none;
+    }
+
+    .Main-News {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .Subscribe-Form {
+        margin: auto;
+    }
+
+    .Logo-Word--B {
+        font-size: 3.125rem;
+    }
+
+    .Logo-Word--L {
+        font-size: 3.125rem;
+    }
+
+    .Logo-Word--A {
+        font-size: 3.125rem;
+    }
+
+    .Logo-Word--N {
+        font-size: 3.125rem;
+    }
+
+    .Logo-Word--K {
+        font-size: 3.125rem;
+    }
+
+    .Logo-Word--S {
+        font-size: 3.125rem;
+    }
+
+}
+
+@media(max-width:34.375rem) {
+
+    .Product-Title {
+        width: 70%;
+        margin: 1.25rem 0;
+        font-size: 2.1875rem;
+    }
+}
