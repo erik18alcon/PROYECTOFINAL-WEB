@@ -414,7 +414,10 @@ label {
         transition: transform .3s ease-in-out;
         transform: translateX(62.5rem);
     }
-
+  .Header-Cart {
+        transition: transform .3s ease-in-out;
+        transform: translateX(62.5rem);
+    }
     .Header-Logo {
         width: 50%;
         font-size: 2.5rem;
@@ -438,16 +441,11 @@ label {
 @media(max-width:34.375rem) {
 
     .Header-Logo {
-        width: 3.75rem;
+        width: 90%;
         font-size: 2.5rem;
-        margin: auto 4.375rem;
+        margin: auto;
     }
 
-
-    .Header-Cart {
-        transition: transform .3s ease-in-out;
-        transform: translateX(62.5rem);
-    }
     .Footer{
         width: 80%;
     }

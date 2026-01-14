@@ -288,3 +288,8 @@ label {
         font-size: .625rem;
     }
 }
+@media(max-width: 34.375rem){
+    .Main-Video{
+        display: none;
+    }
+}
