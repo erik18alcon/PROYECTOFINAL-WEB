@@ -436,6 +436,13 @@ label {
         font-size: 2.5rem;
         margin: auto;
     }
+    .Header-Cart{
+        transform: translateX(56.25rem);
+        width: 12.5rem;
+    }
+    .Header-Cart.isHere{
+        transform: translateX(-65.625rem);
+    }
 
     .Footer{
         width: 80%;
