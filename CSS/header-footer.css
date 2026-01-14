@@ -428,6 +428,10 @@ label {
         width: 12.5rem;
         transition: transform .3s ease-in-out;
         transform: translateX(-60.5rem);
+        display: none;
+    }
+    .Header-Cart.isHere{
+        display: block;
     }
 
     .Footer {
@@ -449,5 +453,14 @@ label {
     .Footer{
         width: 80%;
     }
+
+    .Header-Cart{
+        display: none;
+    }
+    .Header-Cart.isHere{
+        display: block;
+    }
+
+    
 
 }
