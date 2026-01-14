@@ -395,8 +395,8 @@ label {
 
 /*MEDIA*/
 
-@media (max-width: 67.6875rem){
-     .Header-Cart {
+@media (max-width: 67.6875rem) {
+    .Header-Cart {
         transition: transform .3s ease-in-out;
         transform: translateX(-30.5rem);
     }
@@ -438,19 +438,18 @@ label {
 @media(max-width:34.375rem) {
 
     .Header-Logo {
-        width: 3.75rem ;
+        width: 3.75rem;
         font-size: 2.5rem;
-        margin: auto calc((100vw - 3.75rem) / 2) ;
+        margin: auto 4.375rem;
     }
 
-    
-     .Header-Cart {
+
+    .Header-Cart {
         transition: transform .3s ease-in-out;
-        transform: translateX(31.25rem);
+        transform: translateX(62.5rem);
     }
-    .Header-Cart.isHere {
-
-    transform: translateX(-31.25rem);
-}
+    .Footer{
+        width: 80%;
+    }
 
 }
