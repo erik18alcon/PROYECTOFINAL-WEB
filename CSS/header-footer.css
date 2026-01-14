@@ -426,12 +426,9 @@ label {
 
     .Header-Cart {
         width: 12.5rem;
-       transform: none;
-        display: none;
-    }
-    .Header-Cart.isHere{
-        display: block;
-        transform: none;
+        transition: transform .3s ease-in-out;
+        transform: translateX(120%);
+    
     }
 
     .Footer {
@@ -455,13 +452,10 @@ label {
     }
 
     .Header-Cart{
-        display: none;
-        transform: none;
+        transition: transform .3s ease-in-out;
+        transform: translateX(120%);
     }
-    .Header-Cart.isHere{
-        display: block;
-        transform: none
-    }
+    
 
     
 
