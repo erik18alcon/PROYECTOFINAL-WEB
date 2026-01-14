@@ -438,9 +438,9 @@ label {
 @media(max-width:34.375rem) {
 
     .Header-Logo {
-        width: 75%;
+        width: 3.75rem ;
         font-size: 2.5rem;
-        margin: auto;
+        margin: auto calc((100vw - 3.75rem) / 2) ;
     }
 
     
@@ -450,10 +450,7 @@ label {
     }
     .Header-Cart.isHere {
 
-    transform: translateX(0);
+    transform: translateX(-31.25rem);
 }
-    .Body{
-        overflow: hidden;
-    }
 
 }

@@ -181,6 +181,11 @@ label {
 
     }
 
+    .Img-Front:hover {
+
+        transform: translateY(0);
+    }
+
     .Title-Clear {
         width: 100%;
     }
@@ -194,9 +199,12 @@ label {
         margin: 3.125rem 0;
     }
 }
-@media(max-width: 34.375rem){
-    
-    .Img-Detail:hover {
-    transform: scale(0.3);
-}
+
+@media(max-width: 34.375rem) {
+
+    .Img-Front:hover {
+
+        transform: translateY(0);
+    }
+
 }
