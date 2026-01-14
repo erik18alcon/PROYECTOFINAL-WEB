@@ -479,27 +479,27 @@ label {
     }
 
     .Logo-Word--B {
-        font-size: 3.125rem;
+        font-size: 1.875rem;
     }
 
     .Logo-Word--L {
-        font-size: 3.125rem;
+        font-size: 1.875rem;
     }
 
     .Logo-Word--A {
-        font-size: 3.125rem;
+        font-size: 1.875rem;
     }
 
     .Logo-Word--N {
-        font-size: 3.125rem;
+        font-size: 1.875rem;
     }
 
     .Logo-Word--K {
-        font-size: 3.125rem;
+        font-size: 1.875rem;
     }
 
     .Logo-Word--S {
-        font-size: 3.125rem;
+        font-size: 1.875rem;
     }
 
 }
@@ -509,11 +509,12 @@ label {
     .Product-Title {
         width: 70%;
         margin: 1.25rem 0;
-        font-size: 2.1875rem;
+        font-size: 2.8125rem;
     }
     .Hero-Upper{
         width: 95%;
         margin: 12.5rem 0 0 0;
 
     }
+  
 }

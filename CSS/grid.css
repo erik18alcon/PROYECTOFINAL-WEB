@@ -194,3 +194,9 @@ label {
         margin: 3.125rem 0;
     }
 }
+@media(max-width: 34.375rem){
+    
+    .Img-Detail:hover {
+    transform: scale(0.3);
+}
+}

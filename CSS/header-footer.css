@@ -438,7 +438,7 @@ label {
 @media(max-width:34.375rem) {
 
     .Header-Logo {
-        width: 80%;
+        width: 75%;
         font-size: 2.5rem;
         margin: auto;
     }
@@ -446,7 +446,14 @@ label {
     
      .Header-Cart {
         transition: transform .3s ease-in-out;
-        transform: translateX(-60.5rem);
+        transform: translateX(31.25rem);
+    }
+    .Header-Cart.isHere {
+
+    transform: translateX(0);
+}
+    .Body{
+        overflow: hidden;
     }
 
 }
