@@ -468,6 +468,10 @@ label {
     .Main-Blanks {
         display: none;
     }
+      .Newsletter-Button{
+        color: white;
+        background-color: black;
+    }
 
     .Main-News {
         display: flex;
@@ -515,6 +519,10 @@ label {
         width: 100%;
         margin: 12.5rem 0 0 0;
 
+    }
+    .Newsletter-Button{
+        color: white;
+        background-color: black;
     }
   
 }
